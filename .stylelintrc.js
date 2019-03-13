@@ -1,6 +1,6 @@
-{
-  "extends": "stylelint-config-sass-guidelines",
-  "rules": {
+module.exports = {
+  extends: "stylelint-config-sass-guidelines",
+  rules: {
     "comment-whitespace-inside": "always",
     "declaration-no-important": true,
     "font-family-name-quotes": "always-unless-keyword",
@@ -15,8 +15,8 @@
     "order/order": [
       "dollar-variables",
       {
-        "type": "at-rule",
-        "name": "extend"
+        type: "at-rule",
+        name: "extend"
       },
       "custom-properties",
       "declarations",
@@ -94,7 +94,7 @@
     "selector-no-qualifying-type": [
       true,
       {
-        "ignore": ["attribute", "class"]
+        ignore: ["attribute", "class"]
       }
     ],
     "selector-pseudo-element-colon-notation": "single",
