@@ -4,16 +4,16 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
-    // extras
+
     jest: true,
   },
   parserOptions: {
     parser: 'babel-eslint',
   },
   plugins: [
-    'prettier',
-    // "jest", "jsdoc",
-    // 'vue'
+    "jsdoc",
+    // "jest",
+    // 'vue',
   ],
   extends: [
     'eslint:recommended',
@@ -25,18 +25,54 @@ module.exports = {
   ],
 
   rules: {
+    
+    'array-bracket-newline': ['error', { multiline: true }],
+    'array-bracket-spacing': ['error', 'never'],
+    'array-element-newline': ['error', 'consistent'],
+    'block-spacing': ['error'],
+    'brace-style': 'error',
+    'comma-spacing': [
+      'error', {
+        'before': false,
+        'after': true
+      }
+    ],
+    'comma-dangle': ['error', 'only-multiline'],
+    'computed-property-spacing': ['error', 'never'],
     indent: ['error', 2, { SwitchCase: 1 }],
+    'max-len': [
+      'error', {
+        'code': 80,
+        'ignoreComments': true 
+      }
+    ],
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': ['error'],
+    'no-multiple-empty-lines': ['error', { max: 1 }],
+    'no-whitespace-before-property': 'error',
+    'object-curly-newline': [
+      'error', {
+        'multiline': true,
+        'consistent': true
+      }
+    ],
+    'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': ['error'],
     quotes: [
-      'error',
-      'single',
-      { avoidEscape: true, allowTemplateLiterals: true },
+      'error', 'single', {
+        avoidEscape: true,
+        allowTemplateLiterals: true
+      }
     ],
     semi: ['error', 'always'],
-    'comma-dangle': ['error', 'only-multiline'],
+    'semi-spacing': ['error'],
+    'space-before-blocks': ['error'],
+    'space-in-parens': ['error', 'never'],
+    'space-infix-ops': 'error',
+    'space-unary-ops': 'error',
+    'spaced-comment': ['error'],
     // "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     // "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-
-    'prettier/prettier': ['error', { singleQuote: true }],
 
     'jsdoc/require-param-description': 'off',
     'jsdoc/require-returns-description': 'off',
