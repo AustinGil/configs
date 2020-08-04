@@ -7,18 +7,21 @@
     "lint:diff": "eslint $(git diff --name-only -- '*.ts' '*.tsx' '*.js' '*.jsx')"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:diff -- --fix"
-    }
+    "hooks": { "pre-commit": "lint-staged" }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint -- --fix",
+      "git add"
+    ]
   },
   "dependencies": {
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jsdoc": "^30.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-beta.1",
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
   },
 }
