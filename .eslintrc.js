@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     'jsdoc',
     // "jest",
+    // 'security',
     // 'vue'
   ],
   extends: [
@@ -22,6 +23,7 @@ module.exports = {
     "plugin:prettier/recommended",
     'plugin:jsdoc/recommended',
     // "plugin:jest/recommended"
+    // 'plugin:security/recommended',
     // 'plugin:vue/recommended',
     // "plugin:vuejs-accessibility/recommended",
   ],
