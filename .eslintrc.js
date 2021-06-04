@@ -22,6 +22,7 @@ module.exports = {
     'unicorn',
     // "jest",
     // 'vue',
+    // 'vuejs-accessibility',
   ],
   extends: [
     'eslint:recommended',
