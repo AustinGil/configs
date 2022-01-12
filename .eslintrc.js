@@ -55,10 +55,10 @@ module.exports = {
 
     'jsdoc/no-undefined-types': [
       'error',
-      { definedTypes: ['Record', 'Pick', 'T'] },
+      { definedTypes: ['Record', 'Pick', 'T', 'SubmitEvent'] },
     ],
     // 'jsdoc/require-param-description': 'off',
-    // 'jsdoc/require-returns-description': 'off',
+    'jsdoc/require-returns': 'off',
     // 'jsdoc/require-property-description': 'off',
     'jsdoc/valid-types': 'off',
 
