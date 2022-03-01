@@ -4,13 +4,14 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
-    // extras
-    jest: true,
   },
   parserOptions: {
     parser: 'babel-eslint',
     // "ecmaVersion": 6,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   globals: {
     fetch: true,
@@ -20,9 +21,10 @@ module.exports = {
     'jsdoc',
     'security',
     'unicorn',
-    // "jest",
     // 'vue',
     // 'vuejs-accessibility',
+    // 'react',
+    // 'jsx-a11y',
   ],
   extends: [
     'eslint:recommended',
@@ -30,9 +32,10 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:security/recommended',
     'plugin:unicorn/recommended',
-    // 'plugin:jest/recommended',
     // 'plugin:vue/recommended',
     // "plugin:vuejs-accessibility/recommended",
+    // 'plugin:react/recommended',
+    // 'plugin:jsx-a11y/recommended',
   ],
 
   rules: {
