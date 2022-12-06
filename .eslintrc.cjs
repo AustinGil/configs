@@ -1,4 +1,4 @@
-// npm i -D @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-jsdoc eslint-plugin-prettier eslint-plugin-security eslint-plugin-unicorn 
+// npm i -D @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-jsdoc eslint-plugin-prettier eslint-plugin-security eslint-plugin-unicorn eslint-plugin-vue
 module.exports = {
   root: true,
   env: {
