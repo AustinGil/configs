@@ -33,6 +33,7 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:security/recommended',
     'plugin:unicorn/recommended',
+    'plugin:solid/recommended',
     // 'plugin:vue/recommended',
     // "plugin:vuejs-accessibility/recommended",
     // 'plugin:react/recommended',
@@ -62,18 +63,37 @@ module.exports = {
       { definedTypes: ['Record', 'Pick', 'T', 'SubmitEvent'] },
     ],
     // 'jsdoc/require-param-description': 'off',
+    'jsdoc/require-jsdoc': 'off',
     'jsdoc/require-returns': 'off',
     // 'jsdoc/require-property-description': 'off',
     'jsdoc/valid-types': 'off',
 
     // 'unicorn/explicit-length-check': 'off',
-    // 'unicorn/filename-case': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+      },
+    ],
+    'unicorn/no-array-for-each': 'off',
     // 'unicorn/no-array-reduce': 'off',
     // 'unicorn/no-null': 'off',
     // 'unicorn/no-reduce': 'off',
     // 'unicorn/no-useless-undefined': 'off',
     // 'unicorn/prefer-ternary': 'off',
-    // 'unicorn/prevent-abbreviations': 'off',
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        replacements: {
+          props: false,
+          attrs: false,
+        },
+      },
+    ],
+    'unicorn/switch-case-braces': 'off',
 
     // 'vue/require-prop-types': ['error']
     // 'vue/max-attributes-per-line': 'off',
