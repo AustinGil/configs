@@ -4,18 +4,13 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
-    // "ecmaVersion": 6,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
-  },
-  globals: {
-    fetch: true,
   },
   plugins: [
     '@typescript-eslint',
